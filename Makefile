@@ -2,7 +2,7 @@
 
 CXX ?= g++
 CC ?= gcc
-CXXFLAGS ?= -O3 -fPIC -std=c++17 -Wall -Wextra -fno-exceptions -fno-rtti -fvisibility=hidden -Iinclude
+CXXFLAGS ?= -O3 -fPIC -std=c++17 -Wall -Wextra -fno-exceptions -fno-rtti -fno-stack-protector -fvisibility=hidden -Iinclude
 LDFLAGS ?= -shared -Wl,--as-needed
 LDLIBS ?= -lm
 
